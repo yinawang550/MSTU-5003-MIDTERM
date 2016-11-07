@@ -11,10 +11,7 @@
     <!-- jquery js-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/jquery-ui.css" />
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/javascript.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
     <!-- <script src="js/jquery-2.1.4.min.js"></script> -->
 
 </head>
@@ -257,13 +254,17 @@
                     <div class="thumbnail">
                         <iframe src="https://drive.google.com/file/d/0BzjT_bvLoM9gTkJHeU5iVHp0ZWs/preview" width="100%" height="240"></iframe>
                         <div class="caption">
-                            <button type="button" onclick="alert('Hello world!')">Good Story</button>
-                            <button type="button" onclick="alert('Hello world!')">Bad Story</button>
+                            <a tabindex="0" role="button" class="btn btn-info" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-title="Good" data-content="Sorry, it is a bad story, see analysis video to know more!">
+      Good</a>
+                            <a tabindex="0" role="button" class="btn btn-info" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-title="Bad" data-content="Yes, it is a bad story, see analysis video to know more!">
+        Bad</a>
+                            <!-- <button type="button" onclick="alert('Hello world!')">Good Story</button>
+                            <button type="button" onclick="alert('Hello world!')">Bad Story</button> -->
                         </div>
                         <!-- test2.1 answer -->
                         <div class="row" id="videobutton">
                             <a href="#videoanlysis1" role="button" data-toggle="collapse" class="btn btn-primary" aria-expanded="false" aria-controls="answer">
-        Click to video analysis</a>
+        Click to see video analysis</a>
 
                             <div class="collapse" id="videoanlysis1">
                                 <iframe src="https://drive.google.com/file/d/0BzjT_bvLoM9gRUl4NC1yemMzYU0/preview" width="90%" height="220"></iframe>
@@ -276,9 +277,9 @@
                     <div class="thumbnail">
                         <iframe src="https://drive.google.com/file/d/0BzjT_bvLoM9gRlJsRkxLRzU1N00/preview" width="100%" height="240"></iframe>
                         <div class="caption">
-                            <button type="button" onclick="alert('Hello world!')">Good Story</button>
-                            <button type="button" onclick="alert('Hello world!')">Bad Story</button>
-                            <!-- good button -->
+                            <!-- <button type="button" onclick="alert('Hello world!')">Good Story</button>
+                            <button type="button" onclick="alert('Hello world!')">Bad Story</button> -->
+                            <!-- good and bad button -->
                             <a tabindex="0" role="button" class="btn btn-info" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-title="Good" data-content="YES, it is a good story, see analysis video to know more!">
         Good</a>
                             <a tabindex="0" role="button" class="btn btn-info" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-title="Bad" data-content="Sorry, it is a good story, see analysis video to know more!">
@@ -287,7 +288,7 @@
                         <!-- test2.2 answer -->
                         <div class="row" id="videobutton">
                             <a href="#videoanlysis2" role="button" data-toggle="collapse" class="btn btn-primary" aria-expanded="false" aria-controls="answer">
-        Click to video analysis</a>
+        Click to see video analysis</a>
 
                             <div class="collapse" id="videoanlysis2">
                                 <iframe src="https://drive.google.com/file/d/0BzjT_bvLoM9gT1RUSVdmZDBHdDg/preview" width="90%" height="220"></iframe>
@@ -300,49 +301,64 @@
             <!-- CONTACT FORM -->
 
             <div class="container">
-                <form>
-                    <!-- TEXT AREA -->
-                    <div class="form-group">
-                        <label for="exampleInputMessage1">Do you have any question or comments</label>
-                        <textarea class="form-control" rows="3" placeholder="Type your message here"></textarea>
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- comment -->
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputMessage1">Do you have any question or comments?</label>
+
+                                <textarea class="form-control" rows="3" placeholder="Type your message here"></textarea>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
                     </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
+                    <!-- poll -->
+                    <div class="col-md-6">
+                        <iframe src="http://files.quizsnack.com/iframe/embed.html?hash=q7hpachv&width=350&height=260&wmode=transparent&t=1478483106&width=350&height=260" width="350" height="200" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+                    </div>
+                </div>
+
+                <footer>
+                    <!-- SOCIAL LINKS -->
+                    <div class="container pull-center">
+                        <ul class="list-inline list-unstyled">
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- BACK TO TOP – some responsiveness issues -->
+                    <div class="container">
+                        <p class="pull-right">
+                            <a href="#" class="h4">Back to top</a>
+                        </p>
+                    </div>
+                </footer>
             </div>
 
-
-            <footer>
-                <!-- SOCIAL LINKS -->
-                <div class="container pull-center">
-                    <ul class="list-inline list-unstyled">
-                        <li>
-                            <a href="https://www.linkedin.com/in/lizelleserrano" target="_blank">
-                                <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/lizellemds" target="_blank">
-                                <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/lizellemds/" target="_blank">
-                                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- BACK TO TOP – some responsiveness issues -->
-                <div class="container">
-                    <p class="pull-right">
-                        <a href="#" class="h4">Back to top</a>
-                    </p>
-                </div>
-            </footer>
         </div>
+      </div>
+      <script src="js/jquery-2.1.4.min.js"></script>
+      <!-- <script src="js/jquery.js"></script> -->
+      <script src="js/jquery-ui.js"></script>
+      <script src="js/javascript.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 
-        <script src="js/jquery-2.1.4.min.js"></script>
-    </div>
 </body>
 
 </html>

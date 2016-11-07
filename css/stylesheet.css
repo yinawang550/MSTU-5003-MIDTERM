@@ -141,25 +141,18 @@ a:hover {
 }
 
 
-/* selected link
+selected link
 
 a:active {
     color: #ECF0F0;
 }
 
 footer {
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 10px;
-    background-color: #EED533;
+    text-align: center;
 }
 
-.randomfact {
-    background-color: #EED533;
-}
-
-.portfolioPic {
-    padding: 20px;
-}
 
 /*.pull-right {
     float: right!important;
